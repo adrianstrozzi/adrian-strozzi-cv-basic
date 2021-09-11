@@ -1,16 +1,20 @@
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import { ListGroup } from 'react-bootstrap'
 
 const Work = () => {
   return (
-    <Card style={{ width: '18rem' }} bg="dark" text='light'>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card style={{ margin: 'auto', marginTop: '20px', width: '400px' }} bg="light" border="light" text="black" className="text-center">
       <Card.Body>
-        <Card.Title>Work</Card.Title>
+        <Card.Title>Work Experience</Card.Title>
         <Card.Text>
-          Hola soy Dana
+          <ListGroup>
+            <ListGroup.Item action variant="dark">HP</ListGroup.Item>
+            <ListGroup.Item action variant="dark">HP Enterprise</ListGroup.Item>
+            <ListGroup.Item action variant="dark">IBM</ListGroup.Item>
+          </ListGroup>
         </Card.Text>
-        <Button variant="primary">Study</Button>
+        <Button href="/" variant="primary">Home</Button>
       </Card.Body>
     </Card>
   )

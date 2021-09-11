@@ -1,0 +1,26 @@
+.cardbody {
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  background-color: #706f6f;
+  color: black;
+  border-radius: 20px;
+}
+
+.cardheader  {
+  margin: auto;
+  background-color: tan;
+}
+
+.cardbutton {
+  margin: 10px 10px;
+}
+
+.cardimage {
+  padding: 10px;
+  margin: auto;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
