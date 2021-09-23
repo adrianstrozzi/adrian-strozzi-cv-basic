@@ -1,14 +1,12 @@
 import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
+// import Button from 'react-bootstrap/Button'
 import profile from '../assets/profile.jpg'
 import { Image } from 'react-bootstrap'
 import classes from './Home.module.css'
 
 const Home = () => {
   return (
-    <Card style={{
-      margin: 'auto', padding: '20px 10px', marginTop: '20px', width: '400px'
-    }} bg="secondary" border="secondary" text="white" className="text-center" >
+    <Card bg="secondary" text="white" className={classes.cardbody}>
       {/* // <Card className={classes.cardbody}> */}
       {/* <Image style={{ padding: '10px', margin: 'auto', width: '150px', height: '150px', objectFit: 'cover' }} src={profile} alt="Card Image" roundedCircle /> */}
       <Image className={classes.cardimage} src={profile} alt="Card Image" roundedCircle />
@@ -30,6 +28,3 @@ const Home = () => {
 }
 
 export default Home;
-
-
-// src="./src/assets/profile.JPG" rounded fluid 

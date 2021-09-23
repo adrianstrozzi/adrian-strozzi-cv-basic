@@ -1,20 +1,12 @@
 .cardbody {
-  width: 400px;
+  width: 380px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 40px;
+  padding: 20px 0px;
   text-align: center;
-  background-color: #706f6f;
-  color: black;
+  /* background-color: #706f6f;
+  color: black; */
   border-radius: 20px;
-}
-
-.cardheader  {
-  margin: auto;
-  background-color: tan;
-}
-
-.cardbutton {
-  margin: 10px 10px;
 }
 
 .cardimage {
