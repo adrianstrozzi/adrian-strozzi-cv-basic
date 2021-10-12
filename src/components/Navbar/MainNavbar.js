@@ -4,13 +4,13 @@
 
 import { Navbar, Nav, Container } from 'react-bootstrap'
 // import logo from '../assets/react.png'
-import logo from '../../assets/react.png'
+import logo from '../../assets/images/react.png'
 
 const MainNavbar = () => {
   return (
     <div>
       <Navbar bg="dark" variant="dark">
-        <Container>
+        <Container >
           <Navbar.Brand> <img
             src={logo}
             width="30"

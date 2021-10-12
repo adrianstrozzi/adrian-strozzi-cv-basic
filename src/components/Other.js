@@ -1,20 +1,14 @@
 import Card from 'react-bootstrap/Card'
 import { Carousel, Container } from 'react-bootstrap'
 import classes from './Other.module.css'
+import { Am, Amre, Car360, Carcon, Fm, Og, Yg } from '../assets/Images'
 
-import am from '../assets/Amser.png'
-import amre from '../assets/AmserReview.png'
-import car360 from '../assets/Cardiff360.png'
-import carcon from '../assets/CardiffConsul.png'
-import fm from '../assets/ForwardMotion.png'
-import og from '../assets/Overgrown.png'
-import yg from '../assets/Youngrevolt.png'
 
 const Other = () => {
   return (
     <>
       <Card
-        bg="secondary" text="white" className={classes.cardbody}>
+        className={classes.cardbody} bg="secondary" text="white" >
         <Card.Body>
           <Card.Title><b>Other</b></Card.Title>
           <Card.Text>
@@ -23,84 +17,97 @@ const Other = () => {
         </Card.Body>
       </Card>
       <Container className={classes.carouselcontainer}>
-        <Carousel className={classes.carouselbody}>
+        <Carousel>
           <Carousel.Item>
-            <img
-              className={classes.carouselimage}
-              src={am}
-              alt="First slide"
-            />
-            <Carousel.Caption className={classes.carouselcaption}>
-              <h5>Amser</h5>
-              <p>Recorded and engineered in The Atrium Studios, United Kingdom by Adrian Strozzi</p>
-            </Carousel.Caption>
+            <a href="https://rafaelbarreramusic.bandcamp.com/album/amser">
+              <img
+                className={classes.carouselimage}
+                src={Am}
+                alt="First slide"
+              />
+              <Carousel.Caption>
+                <h5>Amser</h5>
+                <p>Recorded and engineered in The Atrium Studios, United Kingdom by Adrian Strozzi</p>
+              </Carousel.Caption>
+            </a>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className={classes.carouselimage}
-              src={amre}
-              alt="Second slide"
-              href="https://rafaelbarreramusic.bandcamp.com/album/amser"
-            />
-            <Carousel.Caption>
-              <h5>Amser Review</h5>
-              <p>Amser Review by Contratiempo Jazz</p>
-            </Carousel.Caption>
+            <a href="https://www.contratiempojazz.net/noticias/resena-amser-de-rafael-barrera/">
+              <img
+                className={classes.carouselimage}
+                src={Amre}
+                alt="Second slide"
+              />
+              <Carousel.Caption>
+                <h5>Amser Review</h5>
+                <p>Amser Review by Contratiempo Jazz</p>
+              </Carousel.Caption>
+            </a>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className={classes.carouselimage}
-              src={car360}
-              alt="Third slide"
-            />
-            <Carousel.Caption>
-              <h5>Cardiff 360 with Spatial Audio</h5>
-              <p>Produced by Adrian Strozzi</p>
-            </Carousel.Caption>
+            <a href="https://www.youtube.com/playlist?list=PL_KN5mycy-9m_lnAcUOHMPaeSqT3a0DBW">
+              <img
+                className={classes.carouselimage}
+                src={Car360}
+                alt="Third slide"
+              />
+              <Carousel.Caption>
+                <h5>Cardiff 360 with Spatial Audio</h5>
+                <p>Produced by Adrian Strozzi</p>
+              </Carousel.Caption>
+            </a>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className={classes.carouselimage}
-              src={carcon}
-              alt="Third slide"
-            />
-            <Carousel.Caption>
-              <h5>Honorary Consul For Mexico in Wales</h5>
-              <p>Mention from Honorary Consul Glynn Pegler</p>
-            </Carousel.Caption>
+            <a href="https://honconsul.tumblr.com/post/169273651014/supporting-mexican-students-who-are-furthering">
+              <img
+                className={classes.carouselimage}
+                src={Carcon}
+                alt="Fourth slide"
+              />
+              <Carousel.Caption>
+                <h5>Honorary Consul For Mexico in Wales</h5>
+                <p>Mention from Honorary Consul Glynn Pegler</p>
+              </Carousel.Caption>
+            </a>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className={classes.carouselimage}
-              src={fm}
-              alt="Third slide"
-            />
-            <Carousel.Caption>
-              <h5>Forward Motion Single by Rafael Barrera</h5>
-              <p>Recorded and engineered in The Atrium Studios, United Kingdom by Adrian Strozzi</p>
-            </Carousel.Caption>
+            <a href="https://rafaelbarreramusic.bandcamp.com/track/forward-motion">
+              <img
+                className={classes.carouselimage}
+                src={Fm}
+                alt="Fifth slide"
+              />
+              <Carousel.Caption>
+                <h5>Forward Motion Single by Rafael Barrera</h5>
+                <p>Recorded and Engineered in The Atrium Studios, United Kingdom by Adrian Strozzi</p>
+              </Carousel.Caption>
+            </a>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className={classes.carouselimage}
-              src={og}
-              alt="Third slide"
-            />
-            <Carousel.Caption>
-              <h5>Overgrown Single by Cardiff Band "Joby"</h5>
-              <p>Recorded and engineered in The Atrium Studios, United Kingdom by Adrian Strozzi</p>
-            </Carousel.Caption>
+            <a href="https://jobyband.bandcamp.com/track/overgrown">
+              <img
+                className={classes.carouselimage}
+                src={Og}
+                alt="sixth slide"
+              />
+              <Carousel.Caption>
+                <h5>Overgrown Single by Cardiff Band "Joby"</h5>
+                <p>Recorded and Engineered in The Atrium Studios, United Kingdom by Adrian Strozzi</p>
+              </Carousel.Caption>
+            </a>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className={classes.carouselimage}
-              src={yg}
-              alt="Third slide"
-            />
-            <Carousel.Caption>
-              <h5>Young Revolt</h5>
-              <p>Band single. Music and lyrics by Adrian Strozzi.</p>
-            </Carousel.Caption>
+            <a href="https://www.youtube.com/watch?v=W1BDCbvqQw0">
+              <img
+                className={classes.carouselimage}
+                src={Yg}
+                alt="Seventh slide"
+              />
+              <Carousel.Caption>
+                <h5>Young Revolt</h5>
+                <p>Music and lyrics by Adrian Strozzi</p>
+              </Carousel.Caption>
+            </a>
           </Carousel.Item>
         </Carousel>
       </Container>

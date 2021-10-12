@@ -1,9 +1,9 @@
+import classes from './Work.module.css'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import { ListGroup } from 'react-bootstrap'
 import { useState } from 'react'
 import Modal from 'react-bootstrap/Modal'
-import classes from './Work.module.css'
 
 const Work = () => {
   const [showHP, setShowHP] = useState(false);
@@ -12,20 +12,14 @@ const Work = () => {
 
   return (
     <>
-      <Card style={{
-        margin: 'auto',
-        marginTop: '20px',
-        width: '400px',
-        height: '250px'
-      }} bg="light" border="light" text="black" className="text-center">
+      <Card bg="light" border="light" className={classes.cardbody}>
         <Card.Header><b>Work Experience</b></Card.Header>
         <Card.Body>
-          <Card.Title></Card.Title>
           <Card.Text>
             <ListGroup>
-              <ListGroup.Item action variant="dark" onClick={() => setShowHP(true)}>Hewlett Packard</ListGroup.Item>
-              <ListGroup.Item action variant="dark" onClick={() => setShowHPE(true)}>Hewlett Packard Enterprise</ListGroup.Item>
-              <ListGroup.Item action variant="dark" onClick={() => setShowIBM(true)}>IBM</ListGroup.Item>
+              <ListGroup.Item action variant="secondary" onClick={() => setShowHP(true)}>Hewlett Packard Inc.</ListGroup.Item>
+              <ListGroup.Item action variant="secondary" onClick={() => setShowHPE(true)}>Hewlett Packard Enterprise</ListGroup.Item>
+              <ListGroup.Item action variant="secondary" onClick={() => setShowIBM(true)}>IBM</ListGroup.Item>
             </ListGroup>
           </Card.Text>
           <Button href="/" variant="primary">Home</Button>
@@ -34,11 +28,11 @@ const Work = () => {
       <Modal show={showHP} onHide={() => setShowHP(false)} centered={true} >
         <Modal.Header>
           <div className={classes.modaltitle}>
-            <h4>Hewlett Packard</h4>
+            <h4>Hewlett Packard Inc.</h4>
           </div>
         </Modal.Header>
         <Modal.Body className="text-center"><p><b>Program Coordinator - Worlwide Commercial Notebooks</b> <p></p>
-          <p>Bill Of Material specialist for Sustaining and New Product Introductions</p></p></Modal.Body>
+          <p>Bill Of Material Specialist for Sustaining and New Product Introductions</p></p></Modal.Body>
         <Modal.Footer>
           <Button variant="danger" size="sm" onClick={() => setShowHP(false)} style={{ margin: 'auto' }}>
             Close
@@ -52,7 +46,7 @@ const Work = () => {
           </div>
         </Modal.Header>
         <Modal.Body className="text-center"><p><b>Payroll - US Region</b> <p></p>
-          <p>Payroll and tax Analyst for US Region HPE employees</p></p></Modal.Body>
+          <p>Payroll and Tax Analyst for US Region HPE employees</p></p></Modal.Body>
         <Modal.Footer>
           <Button variant="danger" size="sm" onClick={() => setShowHPE(false)} style={{ margin: 'auto' }}>
             Close

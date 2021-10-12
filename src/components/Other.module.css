@@ -1,34 +1,53 @@
-img {
-  border-radius: 30px;
-}
-
 .cardbody {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 400px;
   text-align: center;
-  border-radius: 20px;
 }
 
 .carouselimage {
   padding-top: 30px;
   padding-bottom: 30px;
   margin: auto;
-  width: 500px;
-  height: 350px;
+  width: 600px;
+  height: 500px;
   object-fit: contain;
   display: block;
-  opacity: 0.3;
-  border-radius: 20px;
+  opacity: 0.5;
 }
 
 .carouselcontainer {
   margin-top: 50px;
-  width: 500px;
-  height: 355px;
+  width: 600px;
+  height: 505px;
   margin: auto;
-  background-color: rgb(99, 99, 99);
+  /* background-color: rgb(99, 99, 99); */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   border-radius: 30px;
+}
+
+@media (max-width: 600px) {
+  .carouselimage {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+  }
+  .carouselcontainer {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+  }
 }

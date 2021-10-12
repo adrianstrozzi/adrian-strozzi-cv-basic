@@ -13,19 +13,14 @@ const Study = () => {
 
   return (
     <>
-      <Card style={{
-        margin: 'auto',
-        marginTop: '20px',
-        width: '400px',
-        height: '250px'
-      }} bg="light" border="light" text="black" className="text-center">
+      <Card bg="light" border="light" className={classes.cardbody}>
         <Card.Header><b>Studies</b></Card.Header>
         <Card.Body>
           <Card.Text>
             <ListGroup>
-              <ListGroup.Item action variant="dark" onClick={() => setShowBEDU(true)}>BEDU</ListGroup.Item>
-              <ListGroup.Item action variant="dark" onClick={() => setShowUSW(true)}>University of South Wales</ListGroup.Item>
-              <ListGroup.Item action variant="dark" onClick={() => setShowITESO(true)}>ITESO</ListGroup.Item>
+              <ListGroup.Item action variant="secondary" onClick={() => setShowBEDU(true)}>BEDU</ListGroup.Item>
+              <ListGroup.Item action variant="secondary" onClick={() => setShowUSW(true)}>University of South Wales</ListGroup.Item>
+              <ListGroup.Item action variant="secondary" onClick={() => setShowITESO(true)}>ITESO</ListGroup.Item>
             </ListGroup>
           </Card.Text>
           <Button href="/" variant="primary">Home</Button>

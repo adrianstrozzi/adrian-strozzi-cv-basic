@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card'
 // import Button from 'react-bootstrap/Button'
-import profile from '../assets/profile.jpg'
+import profile from '../assets/images/profile.jpg'
 import { Image } from 'react-bootstrap'
 import classes from './Home.module.css'
 
